@@ -31,11 +31,14 @@ class Program {
 
             int randomNum = generator.Next(1, 13);
             string guess = input.GetInput(randomNum);
-            
             int secondNum = generator.Next(1, 13);
             Console.WriteLine("Next card was: " + secondNum);
+
             Point points = new Point();
             points.ScoreCalc(secondNum, randomNum, guess);
+
+            Input play = new Input();
+            play.PlayAgain();
 
 
 

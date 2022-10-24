@@ -26,6 +26,7 @@ class Input {
             return true;
         }
         else if (replay == "n") {
+            Console.WriteLine("Thank you for playing, have a nice day:)!!!");
             return false;
         }
     }
