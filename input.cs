@@ -3,9 +3,9 @@ using System;
 
 class Input {
 
-    public Input() {
+    // public Input() {
         
-    }
+    // }
 
     public string GetInput(int Card) {
 
