@@ -22,11 +22,14 @@ class Input {
         string replay;
         Console.Write("Play again? [y/n] ");
         replay = Console.ReadLine();
-        if (replay == "y"){
+        if (replay == "y") {
             return true;
         }
         else if (replay == "n") {
             Console.WriteLine("Thank you for playing, have a nice day:)!!!");
+            return false;
+        }
+        else{
             return false;
         }
     }
