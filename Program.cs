@@ -4,10 +4,6 @@ class Program {
 
     static void Main(string[] args) {
         // This is our director. It will guide program flow and the process of the game. 
-
-        
-        
-        
         
         /*THIS IS THE DEMO
         * 
@@ -32,7 +28,7 @@ class Program {
             int randomNum = generator.Next(1, 13);
             string guess = input.GetInput(randomNum);
             int secondNum = generator.Next(1, 13);
-            Console.WriteLine("Next card was: " + secondNum);
+            Console.WriteLine("Next card is: " + secondNum);
 
             Point points = new Point();
             points.ScoreCalc(secondNum, randomNum, guess);
@@ -40,11 +36,6 @@ class Program {
             Input play = new Input();
             play.PlayAgain();
 
-
-
-
-
-            
         //     // Print the card description to the console
         // Console.WriteLine(randomCard.Description());
 
