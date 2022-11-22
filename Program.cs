@@ -16,7 +16,7 @@ class Program {
 
         // // Create a new Deck object
         Deck deckOfCards = new Deck();
-
+        Point points = new Point();
         // // Loop continuously until the deck no longer has any cards
         while (deckOfCards.HasMoreCards()) {
 
@@ -30,17 +30,18 @@ class Program {
             int secondNum = generator.Next(1, 13);
             Console.WriteLine("Next card is: " + secondNum);
 
-            Point points = new Point();
             points.ScoreCalc(secondNum, randomNum, guess);
 
             Input play = new Input();
-            play.PlayAgain();
+            if (play.PlayAgain() == false) {
+                break; //break stops a loop
+            }
 
         //     // Print the card description to the console
         // Console.WriteLine(randomCard.Description());
 
         //     // Wait .25 seconds so that this process goes slowly
-        Thread.Sleep(250);
+            Thread.Sleep(250);
         
         // if (deckOfCards.HasMoreCards() = false) {
         // }
