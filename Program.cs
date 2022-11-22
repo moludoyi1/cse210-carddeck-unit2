@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Card Deck Game
+// Michael Oludoyi
+
+using System;
 using System.IO;
 class Program {
 
